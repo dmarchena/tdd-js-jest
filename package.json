@@ -1,0 +1,21 @@
+{
+  "name": "tdd-node-jest",
+  "version": "1.0.0",
+  "description": "Node.js + jest boilerplate for TDD",
+  "main": "index.js",
+  "author": "@dmarchena",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --coverage",
+    "tdd": "jest --watchAll",
+    "coverage": "jest --coverage"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "jest-tap-reporter": "^1.9.0"
+  }
+}
