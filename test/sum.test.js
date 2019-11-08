@@ -1,13 +1,13 @@
-import { sum } from "../src/sum";
+import sum from '../src/sum';
 
-test("should sum two numbers", () => {
-  //Arrange
+test('should sum two numbers', () => {
+  // Arrange
   const a = 1;
   const b = 2;
   const expected = 3;
-  //Act
+  // Act
   const result = sum(a, b);
-  //Assert
+  // Assert
   expect(result).toBe(expected);
-  expect(result).not.toBe(4)
+  expect(result).not.toBe(4);
 });
