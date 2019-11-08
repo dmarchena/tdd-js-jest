@@ -1,24 +1,21 @@
 module.exports = {
   env: {
     es6: true,
-    "jest/globals": true,
-    node: true,
+    'jest/globals': true,
+    node: true
   },
-  extends: [
-    'airbnb',
-  ],
+  extends: ['airbnb', 'prettier'],
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: 'module'
   },
-  plugins: [
-    'jest'
-  ],
+  plugins: ['jest', 'prettier'],
   rules: {
-    'arrow-parens': ['error', 'as-needed', { 'requireForBlockBody': true }],
-  },
+    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
+    'prettier/prettier': ['error']
+  }
 };
